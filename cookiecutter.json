@@ -1,0 +1,19 @@
+{
+    "author": "Tony Flury",
+    "author_username": "TonyFlury",
+    "author_email": "anthony.flury@btinternet.com",
+    "project_name": "Project Name Here",
+    "project_desc":"A short description of the project:",
+    "project_summary":"An expanded description of the project:",
+    "project_repo": "{{cookiecutter.project_name|lower|replace(' ','')}}",
+    "project_capitalised_repo":"{{cookiecutter.project_name|replace(' ','')}}",
+    "project_keywords":"jellybeans widgets fluff",
+    "create_timestamp": "{% now 'utc', '%d %b %Y' %}",
+    "create_year": "{% now 'utc', '%Y' %}",
+    "initial_version":"0.0.1a1",
+    "project_gh": "http://github.com/{{cookiecutter.author_username}}/{{cookiecutter.project_repo}}",
+    "project_ghurl": "git@github.com:{{cookiecutter.author_username}}/{{cookiecutter.project_repo}}.git",
+    "project_docs": "http://{{cookiecutter.project_repo}}.readthedocs.org/en/latest/",
+    "_extensions": ["jinja2_time.TimeExtension"]
+}
+
